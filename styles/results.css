@@ -95,6 +95,10 @@
   gap: 0.5rem;
 }
 
+.item-score > span {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
 .continue-btn {
   display: block;
   font-size: inherit;
