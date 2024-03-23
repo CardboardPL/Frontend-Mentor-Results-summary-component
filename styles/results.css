@@ -1,0 +1,59 @@
+.results-summary-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+
+  background-color: hsl(0, 0%, 100%);
+  max-width: 650px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.results-summary-component > * {
+  padding: 2.5rem;
+  flex: 1;
+}
+
+.result-section {
+  text-align: center;
+  font-weight: 350;
+  color: hsla(0, 0%, 100%, 0.8);
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.result-section h1 {
+  font-size: 1.1rem;
+  font-weight: 450;
+}
+
+.result-section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  width: 160px;
+  height: 160px;
+  margin: 24px auto;
+  border-radius: 50%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.result-section > div > span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.result-section > h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
