@@ -4,15 +4,14 @@
   justify-content: stretch;
   align-items: stretch;
 
+  font-size: 0.89rem;
   background-color: hsl(0, 0%, 100%);
   max-width: 650px;
   border-radius: 1.25rem;
   overflow: hidden;
-}
+  margin: 20px;
 
-.results-summary-component > * {
-  padding: 2.5rem;
-  flex: 1;
+  box-shadow: 1px 1px 5px hsla(224, 30%, 27%, 0.4);
 }
 
 .result-section {
@@ -20,8 +19,9 @@
   font-weight: 350;
   color: hsla(0, 0%, 100%, 0.8);
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 2.5rem;
   border-radius: 1.25rem;
-  margin-bottom: 20px;
+  flex: 1;
 }
 
 .result-section h1 {
@@ -38,8 +38,8 @@
   font-size: 3rem;
   font-weight: 700;
   color: hsl(0, 0%, 100%);
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   margin: 24px auto;
   border-radius: 50%;
   background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
@@ -53,7 +53,76 @@
 
 .result-section > h2 {
   color: hsl(0, 0%, 100%);
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 8px;
+}
+
+.summary-section {
+  color: hsl(224, 30%, 27%);
+  padding: 2.5rem 1.5rem;
+  flex: 1.25;
+}
+
+.summary-section > h3 {
+  margin-bottom: 20px;
+}
+
+.summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  list-style-type: none;
+  margin-top: 16px;
+}
+
+.summary-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  font-weight: 600;
+  padding: 0.8rem;
+  border-radius: 12px;
+}
+
+.summary-list-item > span:not(.item-score) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.continue-btn {
+  display: block;
+  font-size: inherit;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  border: none;
+  margin-top: 1.5rem;
+  padding: 16px;
+  border-radius: 24px;
+  cursor: pointer;
+  overflow: hidden;
+
+  position: relative;
+  background-image: linear-gradient(to bottom, hsl(224, 30%, 27%), hsl(224, 30%, 27%));
+  z-index: 1;
+}
+
+.continue-btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  z-index: -1;
+  transition: opacity 0.15s linear;
+  opacity: 0;
+}
+
+.continue-btn:hover::before {
+  opacity: 1;
 }
