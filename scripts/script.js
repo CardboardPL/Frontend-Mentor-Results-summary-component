@@ -8,7 +8,7 @@ function fetchJSON() {
     "Visual": "234, 85%, 45%",
   }
 
-  fetch('../data.json')
+  fetch('data.json')
     .then(res => {
       return res.json();
     })
