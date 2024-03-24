@@ -7,6 +7,8 @@
   <link rel="stylesheet" type="text/css" href="./styles/general.css">
   <link rel="stylesheet" type="text/css" href="./styles/results.css">
   <link rel="stylesheet" type="text/css" href="./styles/attribution.css">
+
+  <script type="text/javascript" src="./scripts/script.js" defer></script>
   <title>Frontend Mentor | Results summary component</title>
 </head>
 <body>
@@ -24,38 +26,8 @@
 
       <section class="summary-section" aria-labelledby="summary">
         <h3 id="summary">Summary</h3>
-        <ul class="summary-list">
-          <li class="summary-list-item">
-            <span>
-              <img src="./assets/images/icon-reaction.svg" alt="Category icon" aria-hidden="true">
-              <span class="item-name">Reaction</span>
-            </span>
-            <span class="item-score">80 <span>/ 100</span></span>
-          </li>
-
-          <li class="summary-list-item">
-            <span>
-              <img src="./assets/images/icon-memory.svg" alt="Category icon" aria-hidden="true">
-              <span class="item-name">Memory</span>
-            </span>
-            <span class="item-score">92 <span>/ 100</span></span>
-          </li>
-
-          <li class="summary-list-item">
-            <span>
-              <img src="./assets/images/icon-verbal.svg" alt="Category icon" aria-hidden="true">
-              <span class="item-name">Verbal</span>
-            </span>
-            <span class="item-score">61 <span>/ 100</span></span>
-          </li>
-
-          <li class="summary-list-item">
-            <span>
-              <img src="./assets/images/icon-visual.svg" alt="Category icon" aria-hidden="true">
-              <span class="item-name">Visual</span>
-            </span>
-            <span class="item-score">72 <span>/ 100</span></span>
-          </li>
+        <ul id="summaryList" class="summary-list">
+          
         </ul>
 
         <button type="button" class="continue-btn">Continue</button>
