@@ -13,6 +13,8 @@ function fetchJSON() {
       return res.json();
     })
     .then(data => {
+      summaryListElem.innerText = '';
+
       data.forEach(item => {    
         const itemMarkup = 
           `<li class="summary-list-item" style="background-color: hsla(${categoryColor[item.category]}, 0.1)">
